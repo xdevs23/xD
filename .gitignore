@@ -194,3 +194,10 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# -------------------
+
+# libZPlay
+zplay.dll
+libzplay.dll
+libZPlay.dll
