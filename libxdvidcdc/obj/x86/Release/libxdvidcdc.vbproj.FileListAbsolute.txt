@@ -1,0 +1,4 @@
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\bin\x86\Release\libxdvidcdc.dll
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\x86\Release\libxdvidcdc.Resources.resources
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\x86\Release\libxdvidcdc.vbproj.GenerateResource.Cache
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\x86\Release\libxdvidcdc.dll

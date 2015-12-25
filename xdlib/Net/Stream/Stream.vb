@@ -1,0 +1,3 @@
+﻿Namespace Stream
+
+End Namespace

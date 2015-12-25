@@ -1,0 +1,3 @@
+﻿Namespace Geometry
+
+End Namespace

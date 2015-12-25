@@ -1,0 +1,6 @@
+Z:\PPHostDrive\VSProjects\xD\xdzplaydl\bin\x86\Release\xdzplaydl.exe.config
+Z:\PPHostDrive\VSProjects\xD\xdzplaydl\bin\x86\Release\xdzplaydl.exe
+Z:\PPHostDrive\VSProjects\xD\xdzplaydl\obj\x86\Release\xdzplaydl.vbprojResolveAssemblyReference.cache
+Z:\PPHostDrive\VSProjects\xD\xdzplaydl\obj\x86\Release\xdzplaydl.Resources.resources
+Z:\PPHostDrive\VSProjects\xD\xdzplaydl\obj\x86\Release\xdzplaydl.vbproj.GenerateResource.Cache
+Z:\PPHostDrive\VSProjects\xD\xdzplaydl\obj\x86\Release\xdzplaydl.exe

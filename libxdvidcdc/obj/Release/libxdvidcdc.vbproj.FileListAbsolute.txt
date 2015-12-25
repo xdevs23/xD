@@ -1,0 +1,9 @@
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\bin\Release\libxdvidcdc.dll
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\bin\Release\libxdvidcdc.pdb
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\bin\Release\libxdvidcdc.xml
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\Release\libxdvidcdc.vbprojResolveAssemblyReference.cache
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\Release\libxdvidcdc.Resources.resources
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\Release\libxdvidcdc.vbproj.GenerateResource.Cache
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\Release\libxdvidcdc.dll
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\Release\libxdvidcdc.xml
+Z:\PPHostDrive\VSProjects\xD\libxdvidcdc\obj\Release\libxdvidcdc.pdb

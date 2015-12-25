@@ -1,0 +1,3 @@
+﻿Namespace TypeStorage
+
+End Namespace
