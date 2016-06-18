@@ -159,7 +159,7 @@ Namespace Managing
                     Dim ak As String() = GetAllKeys()
 
                     For i As Int32 = 0 To Entries.Count - 1
-                        If ak(i).Equals(key) Then r = GetValue(i)
+                        If Not ak(i) = Nothing AndAlso ak(i).Equals(key) Then r = GetValue(i)
                     Next
 
                     Return r
