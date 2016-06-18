@@ -69,8 +69,8 @@ Namespace Managing
                             Dim index As Int32 = Convert.ToInt32(i / 2)
                             If (Not cfcl(index).StartsWith("#")) And (Not (cfcl(index).StartsWith("[") And cfcl(index).Contains("]"))) Then ' Filter comments
                                 Try
-                                    cftm(i)     = cfcl(index).Split(Convert.ToChar("="))(0)
-                                    cftm(i + 1) = cfcl(index).Split(Convert.ToChar("="))(1)
+                                    cftm(i)     =  cfcl(index).Split(Convert.ToChar("="))(0)
+                                    cftm(i + 1) = (cfcl(index).Split(Convert.ToChar("="))(1)).Replace("[[LF]]", vbCrLf)
                                 Catch ex As Exception
                                     err = True
                                     MessageBox.Show("An Exception occured while processing the file." & vbNewLine & _
