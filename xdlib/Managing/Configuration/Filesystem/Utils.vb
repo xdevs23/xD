@@ -70,7 +70,7 @@ Namespace Managing
                             If (Not cfcl(index).StartsWith("#")) And (Not (cfcl(index).StartsWith("[") And cfcl(index).Contains("]"))) Then ' Filter comments
                                 Try
                                     cftm(i)     =  cfcl(index).Split(Convert.ToChar("="))(0)
-                                    cftm(i + 1) = (cfcl(index).Split(Convert.ToChar("="))(1)).Replace("[[LF]]", vbCrLf)
+                                    cftm(i + 1) = (cfcl(index).Split(Convert.ToChar("="))(1)).Replace("[[LF]]", vbLf)
                                 Catch ex As Exception
                                     err = True
                                     MessageBox.Show("An Exception occured while processing the file." & vbNewLine & _
