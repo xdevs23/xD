@@ -1,7 +1,0 @@
-Z:\PPHostDrive\VSProjects\xD\xdpcon\bin\x86\Release\xdpcon.exe.config
-Z:\PPHostDrive\VSProjects\xD\xdpcon\bin\x86\Release\xdpcon.exe
-Z:\PPHostDrive\VSProjects\xD\xdpcon\bin\x86\Release\xdplay.dll
-Z:\PPHostDrive\VSProjects\xD\xdpcon\obj\x86\Release\xdpcon.vbprojResolveAssemblyReference.cache
-Z:\PPHostDrive\VSProjects\xD\xdpcon\obj\x86\Release\xdpcon.Resources.resources
-Z:\PPHostDrive\VSProjects\xD\xdpcon\obj\x86\Release\xdpcon.vbproj.GenerateResource.Cache
-Z:\PPHostDrive\VSProjects\xD\xdpcon\obj\x86\Release\xdpcon.exe

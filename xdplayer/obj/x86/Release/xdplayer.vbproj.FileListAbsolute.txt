@@ -1,5 +1,0 @@
-Z:\PPHostDrive\VSProjects\xD\xdplayer\bin\x86\Release\xdplay.dll.config
-Z:\PPHostDrive\VSProjects\xD\xdplayer\bin\x86\Release\xdplay.dll
-Z:\PPHostDrive\VSProjects\xD\xdplayer\obj\x86\Release\xdplay.Resources.resources
-Z:\PPHostDrive\VSProjects\xD\xdplayer\obj\x86\Release\xdplayer.vbproj.GenerateResource.Cache
-Z:\PPHostDrive\VSProjects\xD\xdplayer\obj\x86\Release\xdplay.dll

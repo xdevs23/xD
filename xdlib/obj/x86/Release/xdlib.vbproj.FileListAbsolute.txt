@@ -1,4 +1,0 @@
-Z:\PPHostDrive\VSProjects\xD\xdlib\bin\x86\Release\libxd.dll.config
-Z:\PPHostDrive\VSProjects\xD\xdlib\bin\x86\Release\libxd.dll
-Z:\PPHostDrive\VSProjects\xD\xdlib\obj\x86\Release\xdlib.vbprojResolveAssemblyReference.cache
-Z:\PPHostDrive\VSProjects\xD\xdlib\obj\x86\Release\libxd.dll
