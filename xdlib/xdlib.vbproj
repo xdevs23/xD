@@ -157,7 +157,12 @@
     <Compile Include="Net\Stream\Stream.vb" />
     <Compile Include="StringManipulation\StringManipulation.vb" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\xdui\xdui.vbproj">
+      <Project>{8F5D154D-6CCF-4215-8BFF-310A59D29C64}</Project>
+      <Name>xdui</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

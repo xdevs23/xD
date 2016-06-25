@@ -67,14 +67,20 @@ Namespace Managing
 
                         For i As Int32 = 0 To cftm.Length - 1 Step 2 ' Split all lines by '=', so you get a key and a value
                             Dim index As Int32 = Convert.ToInt32(i / 2)
-                            If (Not cfcl(index).StartsWith("#")) And (Not (cfcl(index).StartsWith("[") And cfcl(index).Contains("]"))) Then ' Filter comments
+                            If (Not cfcl(index).StartsWith("#")) And _
+                                (Not (cfcl(index).StartsWith("[") And _
+                                cfcl(index).Contains("]"))) And _
+                                (Not cfcl(index).Length <= 1) Then ' Filter comments and empty/bad lines
                                 Try
                                     cftm(i)     =  cfcl(index).Split(Convert.ToChar("="))(0)
                                     cftm(i + 1) = (cfcl(index).Split(Convert.ToChar("="))(1)).Replace("[[LF]]", vbLf)
                                 Catch ex As Exception
                                     err = True
                                     MessageBox.Show("An Exception occured while processing the file." & vbNewLine & _
-                                                    "The results may be truncated or incomplete.")
+                                                    "The results may be truncated or incomplete." & vbNewLine & _
+                                                    ex.Message & " (" & ex.Source.ToString() & " " & ex.TargetSite().Name & ") " & vbNewLine & _
+                                                    ex.StackTrace & vbNewLine & "Additional information: " & vbNewLine & _
+                                                    "With index i " & i + 1 & " and index index " & index & " we got an exception.")
                                 End Try
                             End If
                         Next
