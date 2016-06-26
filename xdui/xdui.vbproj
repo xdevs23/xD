@@ -90,6 +90,9 @@
     <Compile Include="FlatButtonRound.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="FlatProgressBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="InputBox.Designer.vb">
       <DependentUpon>InputBox.vb</DependentUpon>
     </Compile>
