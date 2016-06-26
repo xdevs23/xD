@@ -6,7 +6,7 @@
         NormalSpeed As Integer = CInt(Math.Round(1000 / 136)),
         InOutSpeed  As Integer = CInt(Math.Round(1000 / 96))
 
-    Private InnerProgressBar As Panel
+    Private InnerProgressBar, BorderPanel As Panel
     Private WithEvents ProgressBarAdvanceTimer As Timer
 
     Private ProgressToReach As Integer = 0, ProgressReached As Integer = 0, Progress As Integer
@@ -14,10 +14,16 @@
     Public Sub New()
         BackColor = Color.Transparent
         
+        BorderPanel = New Panel()
+        BorderPanel.Padding = New Padding(1)
+        BorderPanel.BackColor = Color.FromArgb(92, Color.Black)
+        Controls.Add(BorderPanel)
+        BorderPanel.Dock = DockStyle.Fill
+        
         InnerProgressBar = New Panel()
-        Controls.Add(InnerProgressBar)
-        InnerProgressBar.Location = New Point(0, 0)
-        InnerProgressBar.Height = Height
+        BorderPanel.Controls.Add(InnerProgressBar)
+        InnerProgressBar.Location = New Point(BorderPanel.Padding.Left, BorderPanel.Padding.Top)
+        InnerProgressBar.Height = BorderPanel.Height - BorderPanel.Padding.Top * 2
         InnerProgressBar.Anchor = CType(
             AnchorStyles.Left  + AnchorStyles.Top + 
             AnchorStyles.Right + AnchorStyles.Bottom,
@@ -27,7 +33,7 @@
     End Sub
 
     Private Sub SetProgressInternal(Progress As Integer)
-        InnerProgressBar.Width = CInt(Math.Round(Width * (Progress / 100), 0, MidpointRounding.AwayFromZero))
+        InnerProgressBar.Width = CInt(Math.Round(BorderPanel.Width * (Progress / 100), 0, MidpointRounding.AwayFromZero))
     End Sub
 
     Public Sub SetProgress(Progress As Integer)
