@@ -84,4 +84,8 @@
         BorderPanel.BackColor = Col
     End Sub
 
+    Public Sub ResetProgressColor()
+        InnerProgressBar.BackColor = Color.FromArgb(30, 139, 229)
+    End Sub
+
 End Class
