@@ -72,8 +72,8 @@
         AutoAdvanceLabel = Lbl
     End Sub
 
-    Public Sub GetProgress()
+    Public Function GetProgress() As Integer
         Return Progress
-    End Sub
+    End Function
 
 End Class
