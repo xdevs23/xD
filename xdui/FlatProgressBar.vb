@@ -57,7 +57,9 @@
         If ProgressReached < ProgressToReach Then
             SetProgressInternal(ProgressReached)
             ProgressReached += 1
-        Else : ProgressBarAdvanceTimer.Stop()
+        Else
+            SetProgressInternal(ProgressToReach)
+            ProgressBarAdvanceTimer.Stop()
         End If
         If ProgressReached < ProgressToReach / 4 Or ProgressReached > ProgressToReach * 0.75 Then
             ProgressBarAdvanceTimer.Interval = InOutSpeed
