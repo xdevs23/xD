@@ -10,7 +10,7 @@
     Private WithEvents ProgressBarAdvanceTimer As Timer
     Private AutoAdvanceLabel As Label
 
-    Private ProgressToReach As Integer = 0, ProgressReached As Integer = 0, Progress As Integer
+    Private ProgressToReach As Integer = 0, ProgressReached As Integer = 0, Progress As Integer = 0
 
     Public Sub New()
         BackColor = Color.Transparent
@@ -70,6 +70,10 @@
 
     Public Sub SetAutoAdvanceLabel(Lbl As Label)
         AutoAdvanceLabel = Lbl
+    End Sub
+
+    Public Sub GetProgress()
+        Return Progress
     End Sub
 
 End Class
