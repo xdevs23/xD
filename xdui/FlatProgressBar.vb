@@ -76,4 +76,12 @@
         Return Progress
     End Function
 
+    Public Sub SetProgressColor(Col As Color)
+        InnerProgressBar.BackColor = Col
+    End Sub
+
+    Public Sub SetBorderColor(Col As Color)
+        BorderPanel.BackColor = Col
+    End Sub
+
 End Class
