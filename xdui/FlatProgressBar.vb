@@ -8,6 +8,7 @@
 
     Private InnerProgressBar, BorderPanel As Panel
     Private WithEvents ProgressBarAdvanceTimer As Timer
+    Private AutoAdvanceLabel As Label
 
     Private ProgressToReach As Integer = 0, ProgressReached As Integer = 0, Progress As Integer
 
@@ -39,6 +40,7 @@
     Public Sub SetProgress(Progress As Integer)
         SetProgressInternal(Progress)
         Me.Progress = Progress
+        If Not IsNothing(AutoAdvanceLabel) Then AutoAdvanceLabel.Text = Progress.ToString() & " %"
     End Sub
 
     Public Sub AdvanceProgress(Progress As Integer)
@@ -46,6 +48,7 @@
         ProgressReached = Me.Progress
         ProgressToReach = Progress
         Me.Progress = Progress
+        If Not IsNothing(AutoAdvanceLabel) Then AutoAdvanceLabel.Text = Progress.ToString() & " %"
         ProgressBarAdvanceTimer.Interval = NormalSpeed
         ProgressBarAdvanceTimer.Start()
     End Sub
@@ -61,6 +64,10 @@
         Else
             ProgressBarAdvanceTimer.Interval = NormalSpeed
         End If
+    End Sub
+
+    Public Sub SetAutoAdvanceLabel(Lbl As Label)
+        AutoAdvanceLabel = Lbl
     End Sub
 
 End Class
